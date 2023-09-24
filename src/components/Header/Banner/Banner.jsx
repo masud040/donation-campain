@@ -1,4 +1,9 @@
-const Banner = () => {
+import PropTypes from "prop-types";
+const Banner = ({ handleClick }) => {
+  const handleForm = (e) => {
+    e.preventDefault();
+    handleClick(e.target.name.value);
+  };
   return (
     <div className="hero min-h-[20vh] md:min-h-[30vh] lg:min-h-[60vh] mb-10 bg-hero">
       <div className="hero-overlay bg-white bg-opacity-90"></div>
@@ -6,17 +11,27 @@ const Banner = () => {
         <h1 className="md:mb-2 text-2xl md:text-3xl text-black font-bold">
           I Grow By Helping People In Need
         </h1>
-        <div className="flex justify-center ">
+
+        <form className="flex justify-center" onSubmit={handleForm}>
           <input
             type="text"
+            name="name"
             placeholder="Type here"
             className="input input-bordered rounded-e-none w-full max-w-xs text-black focus:outline-none"
           />
-          <button className="btn bg-red-400 rounded-s-none ">Search</button>
-        </div>
+          <input
+            type="submit"
+            className="btn bg-red-400 rounded-s-none "
+            value="Submit"
+          />
+        </form>
       </div>
     </div>
   );
+};
+
+Banner.propTypes = {
+  handleClick: PropTypes.func,
 };
 
 export default Banner;

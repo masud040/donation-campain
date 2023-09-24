@@ -8,7 +8,7 @@ const DonateCard = ({ data }) => {
       className="rounded-lg flex items-center gap-7"
       style={{ background: card_bg }}
     >
-      <img className="max-w-[40%]" src={image} alt="" />
+      <img className="max-w-[40%] h-full object-cover" src={image} alt="" />
       <div>
         <h4
           style={{ background: category_bg, color: color }}
@@ -16,8 +16,8 @@ const DonateCard = ({ data }) => {
         >
           {category}
         </h4>
-        <h1 className="text-xl font-bold">{title}</h1>
-        <p style={{ color: color }}>{price}</p>
+        <h1 className="md:text-xl font-bold">{title}</h1>
+        <p style={{ color: color }}>${price}</p>
         <Link to={`/details/${id}`}>
           <button
             style={{ background: color }}

@@ -4,9 +4,13 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center w-[90%] mx-auto py-3">
       <div>
-        <img className="w-48" src="https://i.ibb.co/ZMmV7Gk/Logo.png" alt="" />
+        <img
+          className="w-32 md:w-48"
+          src="https://i.ibb.co/ZMmV7Gk/Logo.png"
+          alt=""
+        />
       </div>
-      <ul className="flex gap-6">
+      <ul className="flex gap-4">
         <li>
           <NavLink
             to="/"

@@ -49,7 +49,7 @@ const Statistics = () => {
   return (
     <div
       className="flex
-     items-center justify-center"
+     items-center justify-center "
     >
       <PieChart width={500} height={400}>
         <Pie
@@ -58,7 +58,7 @@ const Statistics = () => {
           cy="50%"
           labelLine={false}
           label={renderCustomizedLabel}
-          outerRadius={80}
+          outerRadius={100}
           fill="#8884d8"
           dataKey="value"
         >
@@ -66,6 +66,7 @@ const Statistics = () => {
             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
           ))}
         </Pie>
+
         <Legend />
       </PieChart>
     </div>
