@@ -1,7 +1,11 @@
+import Donation from "../../components/Donation/Donation";
+import Banner from "../../components/Header/Banner/Banner";
+
 const Home = () => {
   return (
     <div>
-      <div className="bg-"></div>
+      <Banner></Banner>
+      <Donation></Donation>
     </div>
   );
 };
