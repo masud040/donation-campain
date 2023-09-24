@@ -4,11 +4,10 @@ const DonationCard = ({ donation }) => {
   const navigation = useNavigate();
   const { id, image, title, category, category_bg, color, card_bg } =
     donation || {};
-  console.log(navigation);
-  const handleClick = () => {};
+
   return (
     <div
-      onClick={handleClick}
+      onClick={() => navigation(`/details/${id}`)}
       style={{ background: card_bg }}
       className="rounded-xl"
     >

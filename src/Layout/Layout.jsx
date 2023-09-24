@@ -15,7 +15,7 @@ const Layout = () => {
     <div>
       <Navbar></Navbar>
 
-      <div className="w-[90%] mx-auto">
+      <div className="w-[90%] mx-auto my-8">
         <MyContext.Provider value={donations}>
           <Outlet></Outlet>
         </MyContext.Provider>
