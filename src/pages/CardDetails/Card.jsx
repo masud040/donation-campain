@@ -7,7 +7,7 @@ const Card = ({ item }) => {
   return (
     <div>
       <div
-        className="hero min-h-[30vh] md:min-h-[30vh] lg:min-h-[70vh] rounded-lg p-0 mb-7 object-contain relative"
+        className="hero min-h-[30vh] md:min-h-[40vh] lg:min-h-[80vh] rounded-lg p-0 mb-7 object-contain bg-cover bg-center  relative"
         style={{
           backgroundImage: `url(${image})`,
         }}
