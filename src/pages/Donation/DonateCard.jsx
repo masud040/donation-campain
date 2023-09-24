@@ -5,7 +5,7 @@ const DonateCard = ({ data }) => {
     data || {};
   return (
     <div
-      className="rounded-lg flex items-center gap-4"
+      className="rounded-lg flex items-center gap-7"
       style={{ background: card_bg }}
     >
       <img className="max-w-[40%]" src={image} alt="" />
