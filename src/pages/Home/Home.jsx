@@ -1,4 +1,4 @@
-import Donation from "../../components/Donation/Donation";
+import Donation from "../../components/Card/Donation";
 import Banner from "../../components/Header/Banner/Banner";
 
 const Home = () => {

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { setData } from "../../components/Local/LocalStorage";
 
 const Card = ({ item }) => {
   const { id, image, title, price, color, description } = item || {};
@@ -7,14 +7,15 @@ const Card = ({ item }) => {
   return (
     <div>
       <div
-        className="hero min-h-[60vh] rounded-lg p-0 mb-7 relative"
+        className="hero min-h-[30vh] md:min-h-[30vh] lg:min-h-[70vh] rounded-lg p-0 mb-7 object-contain relative"
         style={{
           backgroundImage: `url(${image})`,
         }}
       >
-        <div className="hero-overlay h-24 min-w-full bg-opacity-80 absolute bottom-0 rounded-lg flex justify-start items-center ps-5">
+        <div className="hero-overlay h-20 md:h-24 min-w-full bg-opacity-80 absolute bottom-0 rounded-lg flex justify-start items-center ps-5">
           <button
-            className="py-2 px-3 rounded-lg text-white"
+            onClick={() => setData(id)}
+            className="py-1 md:py-2 px-3 rounded-lg text-white text-sm md:text-base"
             style={{ background: color }}
           >
             Donate ${price}
@@ -22,7 +23,7 @@ const Card = ({ item }) => {
         </div>
       </div>
       <h1 className="text-3xl font-bold mb-4">{title}</h1>
-      <p className="text-sm">{description}</p>
+      <p className="text-sm ">{description}</p>
     </div>
   );
 };
