@@ -1,8 +1,11 @@
-# React + Vite
+# Donation Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- **Dynamic Search:** When write category name in input field and tap the search button. Automatically show the this category item.
 
-Currently, two official plugins are available:
+- **Clickable Card:** That means you click any place in this card you will show the card details.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Stored Donate Data:** When you donate item, this item are stored in localStorage and show this item any time.
+
+- **Donate Validation:** You can donate one item in one time. When you donate same item again this application show and alert.
+
+- **Statistics Chart:** Your Donate are automatically calculate % and show the chart.
